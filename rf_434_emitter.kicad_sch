@@ -5,6 +5,225 @@
 	(uuid "1bcb00bb-9a7f-4a14-b607-a208812fe9e7")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Barrel_Jack_Switch"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Barrel_Jack_Switch"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DC Barrel Jack with an internal switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "DC power barrel jack connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "BarrelJack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_1_1"
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
 				(offset 1.016) hide)
@@ -156,185 +375,6 @@
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Connector:Jack-DC"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jack-DC"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Barrel Jack"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "DC power barrel jack connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "BarrelJack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jack-DC_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(arc
-					(start -3.302 3.175)
-					(mid -3.9343 2.54)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 3.175)
-					(mid -3.9343 2.54)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "Jack-DC_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6541,7 +6581,7 @@
 			(uuid "a0cfcb7d-c201-4faa-80af-bda9e0e514df")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "X1")
 					(unit 1)
@@ -7832,7 +7872,7 @@
 			(uuid "a3674d6a-fd29-4d50-9537-871ec1ed2b72")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "U3")
 					(unit 1)
@@ -9246,7 +9286,7 @@
 			(uuid "8412ff6d-0219-4c1c-8197-d014d124d7f0")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "U2")
 					(unit 1)
@@ -10053,7 +10093,7 @@
 			(uuid "f2122766-0675-4156-8496-c1cc3693e5f6")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "H1")
 					(unit 1)
@@ -10651,7 +10691,7 @@
 			(uuid "32069528-c291-4eee-ad26-f3d2a26dce50")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "U1")
 					(unit 1)
@@ -11058,7 +11098,7 @@
 			(uuid "1012eb75-2ac8-4e27-81b5-19adcb7277e5")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "D1")
 					(unit 1)
@@ -11464,7 +11504,7 @@
 			(uuid "fc769168-d359-4db5-be68-449779b33777")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "JP1")
 					(unit 1)
@@ -11606,7 +11646,7 @@
 			(uuid "9686744e-305d-4741-8976-e6997e4abc6f")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "J1")
 					(unit 1)
@@ -11873,77 +11913,9 @@
 			(uuid "891bce86-2356-43ae-89fa-0aaee7555481")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Jack-DC")
-		(at 194.31 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc9a9a6d-0083-4d9a-9917-52cddf884ea5")
-		(property "Reference" "J2"
-			(at 194.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jack-DC"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002"
-			(at 195.58 124.206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 124.206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Barrel Jack"
-			(at 194.31 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c5e95579-de90-4b89-aa1d-f8522e532013")
-		)
-		(pin "1"
-			(uuid "6183393c-0075-4e96-b33c-75d35e5bdd6b")
-		)
-		(instances
-			(project ""
-				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12023,7 +11995,7 @@
 			(uuid "60592eec-40f5-47f8-98e2-d2430552d00b")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "J3")
 					(unit 1)
@@ -13266,6 +13238,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Barrel_Jack_Switch")
+		(at 194.31 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1666e16-6c14-4065-917b-f42374641c0a")
+		(property "Reference" "J2"
+			(at 194.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Barrel_Jack_Switch"
+			(at 194.31 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Kycon_KLDX-0202-xC_Horizontal"
+			(at 195.58 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Barrel Jack with an internal switch"
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1db1be8d-ed4c-4027-8dfa-41951fa8d4ce")
+		)
+		(pin "3"
+			(uuid "371d7601-e45b-4166-850c-36685dec9eef")
+		)
+		(pin "1"
+			(uuid "9ba8edcf-1473-4574-bef8-00b444dc8484")
+		)
+		(instances
+			(project "rf_434_emitter"
+				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 220.98 96.52 0)
 		(unit 1)
@@ -13394,7 +13437,7 @@
 			(uuid "c18c8700-136b-4e91-9b51-7b10df2fdace")
 		)
 		(instances
-			(project ""
+			(project "rf_434_emitter"
 				(path "/1bcb00bb-9a7f-4a14-b607-a208812fe9e7"
 					(reference "C4")
 					(unit 1)
